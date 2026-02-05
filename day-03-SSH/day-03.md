@@ -1,0 +1,33 @@
+# Day 03 - SSH using VM
+
+## Objective
+
+Understanding how to control a remote server from another machine
+
+## Commands Practiced
+
+* sudo apt update
+* sudo apt install openssh-server -y
+* sudo systemctl status ssh - check SSH status
+* sudo systemctl restart NetworkManager
+* sudo apt clean
+* sudo systemctl start ssh
+* sudo systemctl enable ssh
+
+## what I did
+
+* Updated and installed SSH "sudo apt install openssh-server -y" in VM
+* Make it active using "sudo systemctl start ssh"
+
+## Problems Faced
+
+* When installing SSH, errors occured
+
+## How I fixed
+
+* Restarted networking services "sudo systemctl restart NetworkManager", and cleaned "sudo apt clean"
+
+## Key Learnings
+* SSH: Secure remote terminal access
+	- Here; AWS EC2 = VM
+* EC2 already has installed SSH, in VM, we are doing it manually
